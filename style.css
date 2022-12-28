@@ -1,0 +1,85 @@
+/* CSS for styling the user interface */
+#app {
+
+text-align: left;
+}
+
+#places-list {
+list-style: none;
+padding: 0;
+}
+
+#places-list li {
+margin: 10px 0;
+}
+
+h1, form {
+font-family: 'Montserrat', sans-serif;
+}
+
+/* Define the color scheme */
+:root {
+--primary-color: #F7F5F2;
+--secondary-color: #C65D7B;
+}
+
+/* Use the primary color for the h1 element */
+h1 {
+color: var(--primary-color);
+}
+
+/* Use the secondary color for the submit button */
+button[type="submit"] {
+background-color: var(--secondary-color);
+color: white;
+}
+
+@media (max-width: 800px) {
+/* Make the form and list take up the full width of the screen on small screens */
+form, #places-list {
+  width: 100%;
+}
+
+/* Stack the form elements vertically on small screens */
+form {
+  flex-direction: column;
+}
+}
+
+/* Add a transition to the submit button */
+button[type="submit"] {
+transition: background-color 0.3s ease;
+}
+
+/* Change the background color of the submit button on hover */
+button[type="submit"]:hover {
+background-color: green;
+}
+
+/* Add a fade-in animation to the list items */
+
+
+/* Define the fade-in animation */
+@keyframes fade-in {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+#places-list li {
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.5;
+color: #4AA96C;
+}
+body {
+background-image: url('bkrd1.webp');
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
