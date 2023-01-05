@@ -13,7 +13,7 @@ const placesList = document.getElementById("places-list");
 
 // Create a new element to hold the message
 const message = document.createElement("div");
-message.innerHTML = "My Favorite Places To Eat Are:";
+message.innerHTML = "Grocery list:";
 message.style.fontSize = "20px";
 message.style.fontWeight = "bold";
 
